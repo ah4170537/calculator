@@ -27,10 +27,7 @@ function remove()
     screen.value = screen.value.slice(0,-1);
 }
 function change(){
-    if(screen.value<0){
-        screen.value=-1 * screen.value;
-    }
-    else if(screen.value>0){
+    if(screen.value<0 || screen.value>0){
         screen.value=-1 * screen.value;
     }
     else{
