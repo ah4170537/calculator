@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: black;
+    border-radius: 20px;
+}
+.screen{
+    height: 150px;
+    width: auto;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.screen input{
+    background: transparent;
+    padding-top: 110px;
+    width: 90%;
+    border: none;
+    font-size: 40px;
+    color: white;
+    text-align: right;
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+}
+.content button{
+    font-size: 30px;
+    border: none;
+}
+.content button:hover{
+    cursor: pointer;
+}
+.zero{
+    color: white;
+    width: 130px;
+    height: 60px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(94, 88, 88);   
+    display: flex;
+    align-items: center;
+    padding-left: 23px;
+    margin:0px 5px 10px 5px;
+}
+.zero:hover{
+    background-color: rgb(207, 198, 198);
+    color: rgb(94, 88, 88);
+}
+.zero:active{
+    opacity: 0.7;
+}
+.val{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(94, 88, 88);
+    height: 60px;
+    width: 60px;
+    margin:0px 5px 10px 5px;
+}
+.val:hover{
+    background-color: rgb(207, 198, 198);
+    color: rgb(94, 88, 88);
+}
+.val:active{
+    opacity: 0.7;
+}
+.operator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(235, 153, 1);
+    height: 60px;
+    width: 60px;
+    margin:0px 5px 10px 5px;
+}
+.operator:hover{
+    background-color: rgb(214, 204, 204) ;
+    color: rgb(235, 153, 1);
+}
+.operator:active{
+    opacity: 0.7;
+}
+.func{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 50%;
+    background-color: rgb(214, 204, 204);
+    height: 60px;
+    width: 60px;
+    margin:0px 5px 10px 5px;
+}
+.func:hover{
+    background-color: rgb(186, 181, 181);
+}
+.func:active{
+    opacity: 0.7;
+}
+@media(max-width: 320px){
+    .screen{
+        padding: 3px;
+    }
+    .calculator{
+        width: 270px;
+    }
+    .val{
+        width: 55px;
+        height: 55px;
+    }
+    .func{
+        width: 55px;
+        height: 55px;
+    }
+    .operator{
+        width: 55px;
+        height: 55px;
+    }
+    .zero{
+        width: 120px;
+        height: 55px;
+    }
+
+}
